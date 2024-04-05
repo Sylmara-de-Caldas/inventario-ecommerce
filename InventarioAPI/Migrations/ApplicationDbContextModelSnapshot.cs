@@ -55,7 +55,7 @@ namespace InventarioAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Produtos");
+                    b.ToTable("Produtos", (string)null);
                 });
 #pragma warning restore 612, 618
         }

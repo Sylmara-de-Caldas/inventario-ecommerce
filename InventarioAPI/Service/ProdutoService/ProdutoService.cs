@@ -140,6 +140,7 @@ namespace InventarioAPI.Service.ProdutoService
 
                 produto.Disponivel = false;
                 produto.Status = Enums.StatusEnum.Esgotado;
+                produto.Quantidade = 0;
                 produto.DataAlteracao = DateTime.Now.ToLocalTime();
 
                 _context.Produtos.Update(produto);
