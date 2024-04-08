@@ -6,7 +6,6 @@ namespace InventarioAPI.Enums
     public enum StatusEnum
     {
         EmEstoque,
-        Promocao,
         Esgotado,
     }
 }

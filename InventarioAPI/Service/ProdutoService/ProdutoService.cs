@@ -17,7 +17,7 @@ namespace InventarioAPI.Service.ProdutoService
 
             try 
             {
-                if(novoProduto == null) 
+                if (novoProduto == null) 
                 {
                     serviceResponse.Dados = null;
                     serviceResponse.Mensagem = "Faltam dados!";
@@ -87,6 +87,7 @@ namespace InventarioAPI.Service.ProdutoService
 
                     return serviceResponse;
                 }
+           
 
                 serviceResponse.Dados = produto;
 
@@ -172,8 +173,12 @@ namespace InventarioAPI.Service.ProdutoService
                     return serviceResponse;
                 }
 
-                produto.DataAlteracao = DateTime.Now.ToLocalTime();
+
+                novosDadosProduto.Disponivel = true;
+                novosDadosProduto.Status = Enums.StatusEnum.EmEstoque;
+                novosDadosProduto.DataAlteracao = DateTime.Now.ToLocalTime();
                 _context.Produtos.Update(novosDadosProduto);
+
                 await _context.SaveChangesAsync();
 
                 serviceResponse.Dados = _context.Produtos.ToList();
