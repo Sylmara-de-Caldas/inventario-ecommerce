@@ -136,3 +136,8 @@ C:\Users\smcal\source\repos\InventarioAPI\InventarioAPI\obj\Debug\net8.0\Inventa
 C:\Users\smcal\source\repos\InventarioAPI\InventarioAPI\obj\Debug\net8.0\InventarioAPI.genruntimeconfig.cache
 C:\Users\smcal\source\repos\InventarioAPI\InventarioAPI\obj\Debug\net8.0\ref\InventarioAPI.dll
 C:\Users\smcal\source\repos\InventarioAPI\InventarioAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\smcal\source\repos\InventarioAPI\InventarioAPI\bin\Debug\net8.0\publish\web.config
+C:\Users\smcal\source\repos\InventarioAPI\InventarioAPI\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\smcal\source\repos\InventarioAPI\InventarioAPI\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\smcal\source\repos\InventarioAPI\InventarioAPI\bin\Debug\net8.0\publish\InventarioAPI.deps.json
+C:\Users\smcal\source\repos\InventarioAPI\InventarioAPI\bin\Debug\net8.0\publish\InventarioAPI.runtimeconfig.json
