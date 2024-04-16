@@ -1,0 +1,68 @@
+# informações de autenticação 
+@authentication=bearer
+@bearer=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwibm9tZSI6ImFkbWluaXRyYWRvciBkYSBBcGxpY2HDp8OjbyIsImV4cCI6MTcxMzIzMjA1MSwiaXNzIjoic2V1X2ludmVudGFyaW8iLCJhdWQiOiJzdWFfYXBsaWNhY2FvIn0.mij4IHi4XS4_cEyw22anL3ubGtkwnbGTrlH_Z0OeaTk
+
+
+GET https://localhost:44304/api/Produto
+Authorization: {{authentication}} {{bearer}}
+###
+
+GET https://localhost:44304/api/Produto/12
+Authorization: {{authentication}} {{bearer}}
+###
+
+POST https://localhost:44304/api/Produto
+Authorization: {{authentication}} {{bearer}}
+Content-Type: application/json
+ 
+{
+    "id": 0,
+    "item": "Teste",
+    "fornecedor": "Testandp",
+    "categoria": "Eletronicos",
+    "disponivel": true,
+    "status": "EmEstoque",
+    "dataInclusao": "2024-04-16T00:40:58.921Z",
+    "dataAlteracao": "2024-04-16T00:40:58.921Z",
+    "quantidade": 36
+}
+
+###
+
+PUT https://localhost:44304/api/Produto
+Authorization: {{authentication}} {{bearer}}
+Content-Type: application/json
+ 
+{
+    "id": 20,
+    "item": "Meia",
+    "fornecedor": "Nike",
+    "categoria": "Vestuario",
+    "disponivel": true,
+    "status": "EmEstoque",
+    "dataInclusao": "2024-04-16T00:40:58.921Z",
+    "dataAlteracao": "2024-04-16T00:40:58.921Z",
+    "quantidade": 36
+}
+
+###
+
+PUT https://localhost:44304/api/Produto/indisponibilizaProduto/4
+Authorization: {{authentication}} {{bearer}}
+Content-Type: application/json
+ 
+{
+    "id": 4,
+}
+
+###
+
+DELETE https://localhost:44304/api/Produto
+Authorization: {{authentication}} {{bearer}}
+Content-Type: application/json
+ 
+{
+    "id": 0,
+}
+
+###
